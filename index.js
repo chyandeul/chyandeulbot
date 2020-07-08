@@ -218,7 +218,7 @@ client.on('message', (message) => {
      .setAuthor('챤들', img, 'https://discordapp.com/channels/565114293222375424/576768646534135828/729625974144106556')
      .setThumbnail(img)
      .addBlankField()
-     .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.07 기준)')
+     .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.08 기준)')
      .addField('1. 사람 이름', '!용가리, !정은\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n!커피\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
@@ -231,11 +231,23 @@ client.on('message', (message) => {
     let helpImg = 'https://cdn.discordapp.com/attachments/576768646534135828/576768706353561603/1b3fe53eb2187f61.PNG';
     let commandList = [
       {name: '!챤들 자냐', desc: '챤들봇의 상태'},
-      {name: '!챤들명령어', desc: '챤들봇의 명령어 목록'}
+      {name: '!챤들명령어', desc: '챤들봇의 명령어 목록'},
+      {name: '!챤들의 외침', desc: 'dm으로 전체 공지 보내기'},
+      {name: '!쓱싹', desc: '메세지 지움'},
     ];
+    let commandStr = '';
+    let embed = new Discord.RichEmbed()
+      .setAuthor('Help of 챤들은 못말려 BOT', helpImg)
+      .setColor('#81F7BE')
+      .setFooter(`챤들은 못말려`)
+      .setTimestamp()
+
+    commandList.forEach(x => {
+      commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`;
+    });
 
     embed.addField('Commands: ', commandStr);
-
+  
     message.channel.send(embed)
   }
 
