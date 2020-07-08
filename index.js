@@ -208,7 +208,7 @@ client.on('message', (message) => {
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.07 기준)')
      .addField('1. 사람 이름', '!용가리\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
-     .addField('3. 정보', '!좋아\n!싫어\n!취미\n!활동\n', true)
+     .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
      .setTimestamp()
      .setFooter('챤들은 못말려', img)
@@ -241,16 +241,16 @@ client.on('message', (message) => {
     }
   }
 
-  if(message.content.startsWith('!청소')) {
+  if(message.content.startsWith('!쓱싹')) {
     if(checkPermission(message)) return
 
-    var clearLine = message.content.slice('!청소 '.length);
+    var clearLine = message.content.slice('!쓱싹 '.length);
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
-      message.channel.send("1부터 100까지의 숫자만 입력해주세요.")
+      message.channel.send("**`1부터 100까지만 삭제 가능하다. 뒤질래?`**")
       return;
-    } else if(!isNum) { // c @나긋해 3
+    } else if(!isNum) { // c @챤들은 못말려 3
       if(message.content.split('<@').length == 2) {
         if(isNaN(message.content.split(' ')[2])) return;
 
@@ -272,7 +272,7 @@ client.on('message', (message) => {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개의 메시지를 삭제했습니다. (이 메세지는 잠시 후에 사라집니다.)");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "**`개의 메시지를 삭제했다. 너도 인생 삭ㅈ.. (이 메세지는 잠시 후에 사라짐ㅋ)`**");
         })
         .catch(console.error)
     }
