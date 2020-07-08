@@ -8,6 +8,7 @@ const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.**";
 
 client.on('ready', () => {
   console.log('켰다.');
+  client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -98,6 +99,12 @@ client.on('message', (message) => {
     
     if(message.content === '!홍시') {
       return message.reply('**`레바같은 사람이지..ㅋㅋㅋㅋ`**');
+    }
+
+    if(message.author.bot) return;
+    
+    if(message.content === '!커피') {
+      return message.reply('**`철권 고인물이자, 실수로 회사 컴퓨터를 망가뜨린 무서운 행님이지...후후..`**');
     }
 
     if(message.author.bot) return;
@@ -206,7 +213,7 @@ client.on('message', (message) => {
      .setThumbnail(img)
      .addBlankField()
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.07 기준)')
-     .addField('1. 사람 이름', '!용가리\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n', true)
+     .addField('1. 사람 이름', '!용가리\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n!커피\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
@@ -235,9 +242,9 @@ client.on('message', (message) => {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('ㅇㅇ 보냄');
+      return message.reply('**`ㅇㅇ 보냄`**');
     } else {
-      return message.reply('채널에서 해야지 임마!!!!!');
+      return message.reply('**`채널에서 해야지 임마!!!!!`**');
     }
   }
 
@@ -277,7 +284,6 @@ client.on('message', (message) => {
         .catch(console.error)
     }
   }
-
 });
 
 function checkPermission(message) {
@@ -307,5 +313,6 @@ async function AutoMsgDelete(message, str, delay = 3000) {
     msg.delete();
   }, delay);
 }
+
 
 client.login(token);
