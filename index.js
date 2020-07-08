@@ -8,7 +8,7 @@ const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.**";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
+  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
