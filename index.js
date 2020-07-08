@@ -4,7 +4,7 @@ const token = process.env.token;
 const welcomeChannelName = "출입🚪";
 const byeChannelName = "출입🚪";
 const welcomeChannelComment = "**`어. 왔냐? 환영해. 라온제나 서버야.`**";
-const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.**";
+const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.`**";
 
 client.on('ready', () => {
   console.log('켰다.');
