@@ -109,6 +109,12 @@ client.on('message', (message) => {
 
     if(message.author.bot) return;
     
+    if(message.content === '!정은') {
+      return message.reply('**`현아 못지 않게 카리스마가 있는 여동생이지. 아무도 못 건든다..`**');
+    }
+
+    if(message.author.bot) return;
+    
     if(message.content === '!챤들아 안녕') {
       return message.reply('**`ㅇㅇ ㅎㅇ 나 바쁘니까 부르지마.`**');
     }
@@ -213,7 +219,7 @@ client.on('message', (message) => {
      .setThumbnail(img)
      .addBlankField()
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.07 기준)')
-     .addField('1. 사람 이름', '!용가리\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n!커피\n', true)
+     .addField('1. 사람 이름', '!용가리, !정은\n!태건\n!챤들\n!선우\n!건우\n!실핀\n!현아\n!강철\n!이쿠\n!해냥\n!홍시\n!커피\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
