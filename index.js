@@ -68,7 +68,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!건우') {
-      return message.reply('**`키헤헤헥하고서 가끔씩 실성하는 애...`**');
+      return message.reply('**`괴롭히기 아주 좋은 애지..ㅋㅋ`**');
     }
 
     if(message.author.bot) return;
@@ -86,7 +86,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!이쿠') {
-      return message.reply('**`말 더럽게 안 듣는 쉐키..`**');
+      return message.reply('**`이ㅣ이ㅣ이이이ㅣ쿠우`**');
     }
 
     if(message.author.bot) return;
