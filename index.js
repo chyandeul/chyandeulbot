@@ -8,7 +8,7 @@ const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.`**";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'online' })
+  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'do not disturb' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -56,19 +56,13 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!선우') {
-      return message.reply('**`그 물타기 시작만 하고 빠지는 쉐리 아님..?`**');
-    }
-
-    if(message.author.bot) return;
-    
-    if(message.content === '!현아') {
-      return message.reply('**`은근 카리스마 있는 내 동생인데?`**');
+      return message.reply('**`엄청나게 미스테리한 애야..ㄷㄷ`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!건우') {
-      return message.reply('**`괴롭히기 아주 좋은 애지..ㅋㅋ`**');
+      return message.reply('**`꺼누다 꺼누!!`**');
     }
 
     if(message.author.bot) return;
@@ -92,37 +86,37 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!해냥') {
-      return message.reply('**`아 곧 벌칙으로 애교레코딩 올릴 애?`**');
+      return message.reply('**`ㅋㅋㅋㅋㅋㅋ애교레코딩 아직도 고정에 냅뒀다`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!홍시') {
-      return message.reply('**`레바같은 사람이지..ㅋㅋㅋㅋ`**');
+      return message.reply('**`중2병의 세계로 언제 돌아오냐..? 구미호 시절로 돌아오라고!!`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!커피') {
-      return message.reply('**`철권 고인물이자, 실수로 회사 컴퓨터를 망가뜨린 무서운 행님이지...후후..`**');
+      return message.reply('**`이 분 요즘에 어몽어스에 빠졌어...무서워..ㄷㄷ`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!정은') {
-      return message.reply('**`현아 못지 않게 카리스마가 있는 여동생이지. 아무도 못 건든다..`**');
+      return message.reply('**`엄청 멋진 동생이야! 카리스마 쨩!`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!구울') {
-      return message.reply('**`스뮬에서 활동하는 거 보면, 되게 열심히 하던데 은근 성실한 아이야ㅋㅋ`**');
+      return message.reply('**`빨리 복귀했으면 좋겠댜`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!매달') {
-      return message.reply('**`은근 게임 고인물임..묘하게 못한다고 그러는데 절대 아님..ㅋㅋ`**');
+      return message.reply('**`롤 다이아래 엄청 잘하는 애야`**');
     }
 
     if(message.author.bot) return;
@@ -161,6 +155,24 @@ client.on('message', (message) => {
       return message.reply('**`얘 웃음소리 겁나 특이햌ㅋㅋ 귀여운 동생이야ㅋㅋㅋ`**');
     }
 
+    if(message.author.bot) return;
+    
+    if(message.content === '!뿌요') {
+      return message.reply('**`이 분은 뿌요교라는 게 있을 만큼 엄청난 인싸시지`**');
+    }
+
+    if(message.author.bot) return;
+    
+    if(message.content === '!린') {
+      return message.reply('**`먹을 거 언제 사주냐`**');
+    }
+
+    if(message.author.bot) return;
+    
+    if(message.content === '!브스스') {
+      return message.reply('**`찡얼거릐는 쉨`**');
+    }
+    
     if(message.author.bot) return;
     
     if(message.content === '!챤들아 안녕') {
@@ -267,7 +279,7 @@ client.on('message', (message) => {
      .setThumbnail(img)
      .addBlankField()
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.08 기준)')
-     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!현아, !에제\n!강철, !미네뜨\n!이쿠\n!해냥\n!홍시\n!커피\n!엑스크리너\n', true)
+     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!에제, !강철\n!미네뜨, !이쿠\n!해냥, !뿌요\n!홍시, !브스스\n!커피, !린\n!엑스크리너\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
