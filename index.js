@@ -8,7 +8,7 @@ const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.`**";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'do not disturb' })
+  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -278,7 +278,7 @@ client.on('message', (message) => {
      .setAuthor('챤들', img, 'https://discordapp.com/channels/565114293222375424/576768646534135828/729625974144106556')
      .setThumbnail(img)
      .addBlankField()
-     .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.07.08 기준)')
+     .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.08.02 기준)')
      .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!에제, !강철\n!미네뜨, !이쿠\n!해냥, !뿌요\n!홍시, !브스스\n!커피, !린\n!엑스크리너\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
