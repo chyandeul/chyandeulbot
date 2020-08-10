@@ -3,12 +3,12 @@ const client = new Discord.Client();
 const token = process.env.token;
 const welcomeChannelName = "출입🚪";
 const byeChannelName = "출입🚪";
-const welcomeChannelComment = "**`어. 왔냐? 환영해. 라온제나 서버야.`**";
+const welcomeChannelComment = "**`어. 왔냐? 환영해. 라온제나 서버야. 공지는 꼭 확인해라`**";
 const byeChannelComment = "**`야. 왜 가냐? 진짜 짜증나.`**";
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '내 상태 봐서 뭐하려고 (!챤들봇)' }, status: 'online' })
+  client.user.setPresence({ game: { name: '나 띠거운데 어쩌라고 (!챤들봇)' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -38,7 +38,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!용가리') {
-      return message.reply('**`울어라, 지옥참마도...!`**');
+      return message.reply('**`지옥참마도가 시뤄요`**');
     }
     
     if(message.author.bot) return;
@@ -50,7 +50,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!챤들') {
-      return message.reply('**`그건 나잖아. 왜 부르는 건데?`**');
+      return message.reply('**`ㅇ`**');
     }
 
     if(message.author.bot) return;
@@ -62,19 +62,19 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!건우') {
-      return message.reply('**`꺼누다 꺼누!!`**');
+      return message.reply('**`실성하는 꺼누 히히^^`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!강철') {
-      return message.reply('**`지금은 군대를 간 신비주의컨셉 철덩어리야.`**');
+      return message.reply('**`얘 프사 왜 이러냐`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!실핀') {
-      return message.reply('**`담탐 좋아하는 형이지ㅋㅋㅋ`**');
+      return message.reply('**`어몽어스 후 담탐 왕십리 이민호`**');
     }
 
     if(message.author.bot) return;
@@ -98,7 +98,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!커피') {
-      return message.reply('**`이 분 요즘에 어몽어스에 빠졌어...무서워..ㄷㄷ`**');
+      return message.reply('**`어몽어스?`**');
     }
 
     if(message.author.bot) return;
@@ -110,13 +110,13 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!구울') {
-      return message.reply('**`빨리 복귀했으면 좋겠댜`**');
+      return message.reply('**`복귀 했어요!`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!매달') {
-      return message.reply('**`롤 다이아래 엄청 잘하는 애야`**');
+      return message.reply('**`나문희 왜 그랬어요. 이거 좋다`**');
     }
 
     if(message.author.bot) return;
@@ -171,6 +171,10 @@ client.on('message', (message) => {
     
     if(message.content === '!브스스') {
       return message.reply('**`찡얼거릐는 쉨`**');
+    }
+
+    if(message.content === '!강사니') {
+      return message.reply('**`추리 전적 2승 56패....강빡이새끼`**');
     }
     
     if(message.author.bot) return;
@@ -279,7 +283,7 @@ client.on('message', (message) => {
      .setThumbnail(img)
      .addBlankField()
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.08.02 기준)')
-     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!에제, !강철\n!미네뜨, !이쿠\n!해냥, !뿌요\n!홍시, !브스스\n!커피, !린\n!엑스크리너\n', true)
+     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!에제, !강철\n!미네뜨, !이쿠\n!해냥, !뿌요\n!홍시, !브스스\n!커피, !린\n!엑스크리너, !강사니\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
@@ -333,7 +337,7 @@ client.on('message', (message) => {
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
-      message.channel.send("**`1부터 100까지만 삭제 가능하다. 뒤질래?`**")
+      message.channel.send("**`1부터 100까지만 삭제 가능함. 뒤질래?`**")
       return;
     } else if(!isNum) { // c @챤들은 못말려 3
       if(message.content.split('<@').length == 2) {
