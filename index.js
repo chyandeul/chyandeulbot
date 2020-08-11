@@ -38,7 +38,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!용가리') {
-      return message.reply('**`지옥참마도가 시뤄요`**');
+      return message.reply('**`용가릐눈 완벼케~ 오열이야~ ㄹㅇㅋㅋ`**');
     }
     
     if(message.author.bot) return;
@@ -98,7 +98,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!커피') {
-      return message.reply('**`어몽어스?`**');
+      return message.reply('**`어몽어스? 임포스터? 오늘 저녁 뭐 먹었죠? 아 그럼 임포터스가 아니네요`**');
     }
 
     if(message.author.bot) return;
@@ -170,11 +170,11 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!브스스') {
-      return message.reply('**`찡얼거릐는 쉨`**');
+      return message.reply('**`언제나 찡얼거릐는 쉐키`**');
     }
 
     if(message.content === '!강사니') {
-      return message.reply('**`추리 전적 2승 56패....강빡이새끼`**');
+      return message.reply('**`추리 전적 2승 57패....강빡이새끼`**');
     }
     
     if(message.author.bot) return;
