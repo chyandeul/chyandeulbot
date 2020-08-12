@@ -38,7 +38,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!용가리') {
-      return message.reply('**`용가릐눈 완벼케~ 오열이야~ ㄹㅇㅋㅋ`**');
+      return message.reply('**`용가릐눈 완벼케~ 오열이야~ ㄹㅇㅋㅋ 완전 석상 그 자체`**');
     }
     
     if(message.author.bot) return;
@@ -50,19 +50,19 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!챤들') {
-      return message.reply('**`ㅇ`**');
+      return message.reply('**`ㅇ 왜 부름?`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!선우') {
-      return message.reply('**`엄청나게 미스테리한 애야..ㄷㄷ`**');
+      return message.reply('**`아닌데? 아닌데아닌데?`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!건우') {
-      return message.reply('**`실성하는 꺼누 히히^^`**');
+      return message.reply('**`실성하는 꺼누 히히^^ 꺼누야 꺼누야 이리 와서 히히히~`**');
     }
 
     if(message.author.bot) return;
@@ -80,31 +80,31 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!이쿠') {
-      return message.reply('**`이ㅣ이ㅣ이이이ㅣ쿠우`**');
+      return message.reply('**`이쿠야 언젠간 돌아올거지?`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!해냥') {
-      return message.reply('**`ㅋㅋㅋㅋㅋㅋ애교레코딩 아직도 고정에 냅뒀다`**');
+      return message.reply('**`랩 잘하는 내 프로젝트 막내쉨 애덕이 성대모사 장인`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!홍시') {
-      return message.reply('**`중2병의 세계로 언제 돌아오냐..? 구미호 시절로 돌아오라고!!`**');
+      return message.reply('**`할아범이야 홍시할아범ㅋㅋㅋㅋㅋ`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!커피') {
-      return message.reply('**`어몽어스? 임포스터? 오늘 저녁 뭐 먹었죠? 아 그럼 임포터스가 아니네요`**');
+      return message.reply('**`어몽어스? 임포스터? 오늘 저녁 뭐 먹었죠? 아 그럼 임포스터가 아니네요`**');
     }
 
     if(message.author.bot) return;
     
     if(message.content === '!정은') {
-      return message.reply('**`엄청 멋진 동생이야! 카리스마 쨩!`**');
+      return message.reply('**`어마무시한 추리로 에이스 등극!`**');
     }
 
     if(message.author.bot) return;
@@ -134,7 +134,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!아듀') {
-      return message.reply('**`노래 엄청 잘하지, 그리고 족보파괴자라 가끔씩 얘 나이를 헷갈려해ㅋㅋㅋ`**');
+      return message.reply('**`왜 그런지는 모르겠는데 실핀형 카운터임....ㅋㅋ 개꾸르잼ㅋㅋㅋㅋ`**');
     }
 
     if(message.author.bot) return;
@@ -158,7 +158,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!뿌요') {
-      return message.reply('**`이 분은 뿌요교라는 게 있을 만큼 엄청난 인싸시지`**');
+      return message.reply('**`뿌요님의 부계는 짜요야 그리고 뿌요남은 혼술을 좋아해`**');
     }
 
     if(message.author.bot) return;
@@ -174,7 +174,7 @@ client.on('message', (message) => {
     }
 
     if(message.content === '!강사니') {
-      return message.reply('**`추리 전적 2승 57패....강빡이새끼`**');
+      return message.reply('**`추리 전적 2승 156패....강빡이새끼`**');
     }
     
     if(message.author.bot) return;
