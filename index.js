@@ -79,20 +79,8 @@ client.on('message', (message) => {
 
     if(message.author.bot) return;
     
-    if(message.content === '!이쿠') {
-      return message.reply('**`이쿠야 언젠간 돌아올거지?`**');
-    }
-
-    if(message.author.bot) return;
-    
     if(message.content === '!해냥') {
       return message.reply('**`랩 잘하는 내 프로젝트 막내쉨 애덕이 성대모사 장인`**');
-    }
-
-    if(message.author.bot) return;
-    
-    if(message.content === '!홍시') {
-      return message.reply('**`할아범이야 홍시할아범ㅋㅋㅋㅋㅋ`**');
     }
 
     if(message.author.bot) return;
@@ -127,12 +115,6 @@ client.on('message', (message) => {
 
     if(message.author.bot) return;
     
-    if(message.content === '!제이') {
-      return message.reply('**`얘 맨날 술만 먹어...맨날 술이야아ㅏ 이 ㅈㄹ`**');
-    }
-
-    if(message.author.bot) return;
-    
     if(message.content === '!아듀') {
       return message.reply('**`왜 그런지는 모르겠는데 실핀형 카운터임....ㅋㅋ 개꾸르잼ㅋㅋㅋㅋ`**');
     }
@@ -147,12 +129,6 @@ client.on('message', (message) => {
     
     if(message.content === '!에제') {
       return message.reply('**`정말 모범생인 것같은데, 묘하게 어둠의 기운이....`**');
-    }
-
-    if(message.author.bot) return;
-    
-    if(message.content === '!미네뜨') {
-      return message.reply('**`얘 웃음소리 겁나 특이햌ㅋㅋ 귀여운 동생이야ㅋㅋㅋ`**');
     }
 
     if(message.author.bot) return;
@@ -283,7 +259,7 @@ client.on('message', (message) => {
      .setThumbnail(img)
      .addBlankField()
      .addField('[챤들은 못말려 명령어]', '- 아래의 명령어를 쓰시면 반응합니다! (20.08.02 기준)')
-     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !제이\n!실핀, !꽁냥\n!에제, !강철\n!미네뜨, !이쿠\n!해냥, !뿌요\n!홍시, !브스스\n!커피, !린\n!엑스크리너, !강사니\n', true)
+     .addField('1. 사람 이름', '!용가리, !정은\n!태건, !구울\n!챤들, !매달\n!선우, !아듀\n!건우, !꽁냥\n!실핀, !강철\n!에제, !뿌요\n!미네뜨, !브스스\n!해냥, !린\n!커피, !강사니\n!엑스크리너\n', true)
      .addField('2. 대화', '!챤들 자냐, !챤들 이뻐\n!챤들아 안녕, !챤들 이쁜짓\n!챤들 바보, !챤들 좋아해\n!챤들아 뭐해, !챤들 뽀뽀\n!챤들아 놀자\n!챤들 멍청이\n!챤들아 꺼져\n!챤들 사랑해\n!챤들 미워\n', true)
      .addField('3. 기타', '!좋아\n!싫어\n!취미\n!활동\n!쓱싹\n', true)
      .addBlankField()
@@ -299,7 +275,7 @@ client.on('message', (message) => {
       {name: '!챤들의 외침', desc: 'dm으로 전체 공지 보내기'},
       {name: '!쓱싹', desc: '메세지 지움'},
     ];
-    let commandStr = '';
+    let commandStr = '!챤들';
     let embed = new Discord.RichEmbed()
       .setAuthor('Help of 챤들은 못말려 BOT', helpImg)
       .setColor('#81F7BE')
