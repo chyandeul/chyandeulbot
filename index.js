@@ -44,7 +44,7 @@ client.on('message', (message) => {
     if(message.author.bot) return;
     
     if(message.content === '!태건') {
-      return message.reply('**`누가 내꺼 맘대로 부르랬냐.`**');
+      return message.reply('**`쿠키런이랑 원신 좋아하는 빌런`**');
     }
 
     if(message.author.bot) return;
